@@ -1,9 +1,9 @@
 // chiedo all'utente quanti km e quanti anni ha
-const userKm = prompt("Ciao Utente! Quanti Km vuoi percorrere?");
-const userAge = prompt("Ciao Utente! Quanti Anni hai?");
+let userKm = prompt("Ciao Utente! Quanti Km vuoi percorrere?");
+let userAge = prompt("Ciao Utente! Quanti Anni hai?");
 console.log(userKm, userAge);
 // calcolo il costo per km
-const costoKm = (userKm * 0.21);
+let costoKm = (userKm * 0.21);
 console.log(costoKm);
 //calcolo il primo sconto da sottrarre successivamente al costo del biglietto
 let discountFisrt = (userAge * 0.20);
@@ -19,7 +19,6 @@ let priceSecond = (costoKm - discountSecond);
 console.log(priceSecond);
 
 
-
 if (userAge < 18) {
     console.log(Math.round(priceFirst));
 } else if (userAge > 65) {
@@ -27,10 +26,10 @@ if (userAge < 18) {
 } else console.log(Math.round(costoKm));
 
 
-document.getElementById("message").innerHTML= 'euro';
+document.getElementById("message").innerHTML= 'Il costo del biglietto è di' + costoKm  + 'euro';
 
-
-
+document.getElementById("message").innerHTML= 'Il costo del biglietto è di' + priceFirst  + 'euro';
+document.getElementById("message").innerHTML= 'Il costo del biglietto è di' + priceSecond + 'euro';
 /*if ( userAge > 65 ) {
     console.log(Math.round(userAge * 0.40) - costoKm);
 }else if (userAge < 18) {
