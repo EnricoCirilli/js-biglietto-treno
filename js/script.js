@@ -23,7 +23,6 @@ console.log(totalPriceFirst);
 let totalPriceSecond = (costoKm - priceSecond);
 console.log(totalPriceSecond);
 
-let totalPrice = '';
 
 if (userAge > 65) {
     console.log(Math.round(totalPriceSecond));
