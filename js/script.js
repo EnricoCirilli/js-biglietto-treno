@@ -27,9 +27,12 @@ if (userAge < 18) {
 
 
 document.getElementById("message").innerHTML= 'Il costo del biglietto è di' + costoKm  + 'euro';
-
 document.getElementById("message").innerHTML= 'Il costo del biglietto è di' + priceFirst  + 'euro';
 document.getElementById("message").innerHTML= 'Il costo del biglietto è di' + priceSecond + 'euro';
+
+
+
+
 /*if ( userAge > 65 ) {
     console.log(Math.round(userAge * 0.40) - costoKm);
 }else if (userAge < 18) {
