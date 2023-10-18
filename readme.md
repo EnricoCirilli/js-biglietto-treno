@@ -22,7 +22,7 @@ L'output del prezzo finale va messo fuori in forma umana (con massimo due decima
 4. formula per calcolare lo sconto del 20%
 5. formula per calcolare lo sconto del 40%
 6. formula per calcolare il prezzo totale del primo sconto
-7. formula per calcolare il prezzo totale del socndo sconto.
+7. formula per calcolare il prezzo totale del secondo sconto.
 8. applico formula condizionale per far si che si applichi una condizione in una delle tre situazioni.
 
 
