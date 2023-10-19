@@ -1,11 +1,42 @@
 // chiedo all'utente quanti km e quanti anni ha
-let userKm = parseInt(prompt("Ciao Utente! Quanti Km vuoi percorrere?"));
+const userKm = parseInt(prompt("Ciao Utente! Quanti Km vuoi percorrere?"));
 console.log(userKm);
-let userAge = parseInt(prompt("Ciao Utente! Quanti Anni hai?"));
+const userAge = parseInt(prompt("Ciao Utente! Quanti Anni hai?"));
 console.log(userAge);
 // calcolo il costo per km
-let costoKm = (userKm * 0.21);
-console.log(costoKm);
+const kmPrice = 0.21;
+
+const basePrice = userKm * kmPrice;
+console.log(basePrice);
+
+let discount = 0;
+let discountMessage = " Non hai nessun sconto";
+
+if(userAge < 18){
+    discount = basePrice * 0.2;
+    discountMessage =`Sei minorenne quindi hai uno sconto del 20%`;
+}else if  (userAge > 65) {
+    discount = basePrice * 0.4;
+    discountMessage =``;
+} 
+
+console.log (discount);
+
+
+// calcolo prezzo finale
+
+const finalPrice = basePrice - discount;
+
+console.log(finalPrice.toFixed(2));
+
+
+// prepara messaggio
+document.getElementById("result").innerHTML = `il prezzo è {finalPrice}`
+
+
+
+
+/*
 //calcolo il primo sconto da sottrarre successivamente al costo del biglietto
 let discountFisrt = (userAge * 0.20);
 console.log(discountFisrt);
@@ -30,7 +61,7 @@ if (userAge < 18) {
 document.getElementById("message").innerHTML= 'Il costo del biglietto è di' + costoKm.toFixed(2)+ '€';
 document.getElementById("message").innerHTML= 'Il costo del biglietto è di' + priceFirst.toFixed(2)  + '€';
 document.getElementById("message").innerHTML= 'Il costo del biglietto è di' + priceSecond.toFixed(2) + '€';
-
+*/
 
 
 
