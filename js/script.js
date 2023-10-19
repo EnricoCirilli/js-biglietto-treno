@@ -1,7 +1,7 @@
 // chiedo all'utente quanti km e quanti anni ha
-let userKm = prompt("Ciao Utente! Quanti Km vuoi percorrere?");
+let userKm = parseInt(prompt("Ciao Utente! Quanti Km vuoi percorrere?"));
 console.log(userKm);
-let userAge = prompt("Ciao Utente! Quanti Anni hai?");
+let userAge = parseInt(prompt("Ciao Utente! Quanti Anni hai?"));
 console.log(userAge);
 // calcolo il costo per km
 let costoKm = (userKm * 0.21);
